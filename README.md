@@ -11,10 +11,10 @@ Formulario de Contacto con Servicio de Envío de Correo: Implementé un formular
 
 # Instalación y Uso
 Clona este repositorio:
-git clone https://github.com/TuUsuario/TuPortafolio.git
+git clone https://github.com/Isa696/IsaPortfolio.git
 
 # Instala las dependencias:
-cd TuPortafolio
+cd TuCarpetaPortafolio
 npm install
 
 # Configura tus credenciales de API de GitHub
