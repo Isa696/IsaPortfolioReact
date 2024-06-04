@@ -1,8 +1,26 @@
-# React + Vite
+# Mi Portafolio de Desarrollador Frontend en React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene mi portafolio personal como desarrollador frontend, construido utilizando React.js y adaptado a partir de la plantilla Reflux de Templatemo.
 
-Currently, two official plugins are available:
+# Características:
+# Componetización del Contenido:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+He estructurado mi portafolio en componentes reutilizables para una mejor organización y mantenimiento del código.
+Consumo de la API de GitHub: Utilizo la API de GitHub para mostrar mis proyectos públicos y sus detalles, como descripciones, estrellas y lenguajes utilizados.
+Formulario de Contacto con Servicio de Envío de Correo: Implementé un formulario de contacto que permite a los visitantes ponerse en contacto conmigo. Los mensajes enviados a través del formulario se envían a mi dirección de correo electrónico utilizando un servicio de envío de correos.
+
+# Instalación y Uso
+Clona este repositorio:
+git clone https://github.com/TuUsuario/TuPortafolio.git
+
+# Instala las dependencias:
+cd TuPortafolio
+npm install
+
+# Configura tus credenciales de API de GitHub
+Dentro del component ProjectCards.jsx cambia la url de la api por la tuya.
+Ejecuta la aplicación:
+npm run dev
+
+Contribución
+Si encuentras algún error o tienes sugerencias para mejorar mi portafolio, ¡no dudes en abrir un issue o enviar un pull request!
