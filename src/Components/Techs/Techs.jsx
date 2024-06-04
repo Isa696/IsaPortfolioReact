@@ -42,10 +42,10 @@ function Techs() {
                         />
 
                         <TechsAccordion
-                            title={"React.native in progress..."}
+                            title={"React.native en curso..."}
                             logo={"fifth-service-icon service-icon"}
                             logo2={"fifth-service-icon-2 service-icon"}
-                            accordionText={`Actualmente cursando en Coder House.`}
+                            accordionText={`Actualmente estudiando en Coder House.`}
                         />
 
                     </div>
