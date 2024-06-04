@@ -1,0 +1,118 @@
+/* Services */
+
+.my-services .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.service-item h4 {
+    transition: all 0.5s;
+}
+
+.service-item p {
+    transition: all 0.5s;
+}
+
+.service-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.service-item .first-service-icon {
+    background-image: url("../../assets/images/html5.svg");
+}
+
+.service-item:hover .first-service-icon {
+    background-image: url("../../assets/images/html5-black.svg");
+
+}
+
+.service-item .first-service-icon-2 {
+    background-image: url("../../assets/images/css3-alt.svg");
+}
+
+.service-item:hover .first-service-icon-2 {
+    background-image: url("../../assets/images/css3-alt-black.svg");
+}
+
+.service-item .second-service-icon {
+    background-image: url("../../assets/images/square-js.svg");
+}
+
+.service-item:hover .second-service-icon {
+    background-image: url("../../assets/images/square-js-black.svg");
+}
+
+.service-item .third-service-icon {
+    background-image: url("../../assets/images/react.svg");
+}
+
+.service-item:hover .third-service-icon {
+    background-image: url("../../assets/images/react-black.svg");
+}
+
+.service-item .third-service-icon-2 {
+    background-image: url("../../assets/images/firestore-svg.svg");
+}
+
+.service-item:hover .third-service-icon-2 {
+    background-image: url("../../assets/images/firestore-svg-black.svg");
+}
+
+.service-item .fourth-service-icon {
+    background-image: url("../../assets/images/git-alt.svg");
+}
+
+.service-item:hover .fourth-service-icon {
+    background-image: url("../../assets/images/git-alt-black.svg");
+}
+
+.service-item .fourth-service-icon-2 {
+    background-image: url("../../assets/images/square-github.svg");
+}
+
+.service-item:hover .fourth-service-icon-2 {
+    background-image: url("../../assets/images/square-github-black.svg");
+}
+
+
+.service-item .fifth-service-icon {
+    background-image: url("../../assets/images/react.svg");
+}
+
+.service-item:hover .fifth-service-icon {
+    background-image: url("../../assets/images/react-black.svg");
+}
+
+.service-item .fifth-service-icon-2 {
+    background-image: url("../../assets/images/working-progress-white.svg");
+}
+
+.service-item:hover .fifth-service-icon-2 {
+    background-image: url("../../assets/images/working-progress-black.svg");
+}

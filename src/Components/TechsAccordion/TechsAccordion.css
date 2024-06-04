@@ -1,0 +1,12 @@
+.transition-accordion {
+    overflow: hidden;
+    transition-property: max-height;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+}
+
+.open {
+    max-height: 500px;
+    opacity: 1;
+}
