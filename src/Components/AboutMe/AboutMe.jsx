@@ -2,7 +2,7 @@
 function AboutMe() {
     return (
         <>
-            <section className="section about-me" data-section="section3">
+            <section className="section" data-section="section3">
                 <div className="container">
                     <div className="section-heading">
                         <h2>Sobre Mi</h2>

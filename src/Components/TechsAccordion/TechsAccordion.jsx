@@ -15,6 +15,10 @@ function TechsAccordion({ title, logo, logo2, accordionText }) {
           <div className={logo2}></div>
           <h4>{title}</h4>
 
+          <div className="icon-container">
+          {!accordionOpen ? <i className="icon fa fa-plus"></i> : <i className="icon fa fa-minus"></i>}
+          </div>
+
           <div className={accordionClass}>
             {accordionOpen &&
               <p>
