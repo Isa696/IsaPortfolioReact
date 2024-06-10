@@ -11,18 +11,27 @@
     opacity: 1;
 }
 
-.icon-container{
+.icon-container {
     display: flex;
     justify-content: center;
 }
 
-.icon{
+.icon {
     color: rgb(255, 255, 255);
-    transition: all 0.5s;
     font-size: 20px;
     display: inline-block;
 }
 
-.service-item:hover .icon{
+.service-item:active .rotate-left {
+    transform: rotateZ(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:active .rotate-right {
+    transform: rotateZ(-180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover .icon {
     color: rgb(0, 0, 0);
 }
