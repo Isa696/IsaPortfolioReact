@@ -8,8 +8,12 @@ Este repositorio contiene mi portafolio personal como desarrollador frontend, co
 # Componetización del Contenido:
 
 He estructurado mi portafolio en componentes reutilizables para una mejor organización y mantenimiento del código.
-Consumo de la API de GitHub: Utilizo la API de GitHub para mostrar mis proyectos públicos y sus detalles, como descripciones, estrellas y lenguajes utilizados.
-Formulario de Contacto con Servicio de Envío de Correo: Implementé un formulario de contacto que permite a los visitantes ponerse en contacto conmigo. Los mensajes enviados a través del formulario se envían a mi dirección de correo electrónico utilizando un servicio de envío de correos.
+
+Consumo de la API de GitHub: 
+Utilizo la API de GitHub para mostrar mis proyectos públicos y sus detalles, como descripciones, enlaces al repositorio y deploys.
+
+Formulario de Contacto con Servicio de Envío de Correo: 
+Implementé un formulario de contacto que permite a los visitantes ponerse en contacto conmigo. Los mensajes enviados a través del formulario se envían a mi dirección de correo electrónico utilizando un servicio de envío de correos.
 
 # Instalación y Uso
 Clona este repositorio:
