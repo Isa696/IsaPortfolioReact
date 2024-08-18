@@ -111,9 +111,9 @@
 }
 
 .service-item .fifth-service-icon-2 {
-    background-image: url("../../assets/images/working-progress-white.svg");
+    background-image: url("../../assets/images/RTDB-white.svg");
 }
 
 .service-item:hover .fifth-service-icon-2 {
-    background-image: url("../../assets/images/working-progress-black.svg");
+    background-image: url("../../assets/images/RTDB-black.svg");
 }

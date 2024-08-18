@@ -42,10 +42,10 @@ function Techs() {
                         />
 
                         <TechsAccordion
-                            title={"React.native en curso..."}
+                            title={"Native & Real Time Database"}
                             logo={"fifth-service-icon service-icon"}
                             logo2={"fifth-service-icon-2 service-icon"}
-                            accordionText={`Actualmente estudiando en Coder House.`}
+                            accordionText={`Creacion apps mobiles con expo. Integración componentes nativos: Geolocalización y Camara. Redux: manejo del estado global de la app. Navegación: Tab Navigator y Stack Navigator. Firebase Realtime Database:Sincronización entre la app y la base de datos. Autenticación con Firebase: inicio de sesión y registro de usuarios.`}
                         />
 
                     </div>
