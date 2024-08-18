@@ -7,7 +7,7 @@ function Cards({ repo }) {
                     <div className="overlay">
                         <a href={repo.html_url} target="_blank"
                         ><i className="fa fa-code"></i></a>
-                        <span>Ver repositorio!</span>
+                        <span>Ver Codigo!</span>
                         <a href={repo.homepage} target="_blank"
                         ><i className="fa fa-link"></i></a>
                         <span>Versión final!</span>
