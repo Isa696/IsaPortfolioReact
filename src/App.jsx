@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet"
 import "./app.css"
 
 function App() {
-
   return (
     <>
       <div id="page-wraper">
@@ -15,7 +14,7 @@ function App() {
         <Helmet>
           <title>Isaias Portfolio</title>
           <meta name="og:description" content="Portafolio personal como desarrollador frontend." />
-          <meta name="og:thumbnail" content={`./src/assets/images/thumbnail.jpg`} />
+          <meta name="og:thumbnail" content="https://i.imgur.com/kf8bimK.jpg" />
         </Helmet>
 
         <SideBar />
