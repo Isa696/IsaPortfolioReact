@@ -15,7 +15,7 @@ function App() {
         <Helmet>
           <title>Isaias Portfolio</title>
           <meta name="og:description" content="Portafolio personal como desarrollador frontend." />
-          <meta name="og:thumbnail" content={`${import.meta.env.PUBLIC_URL}/assets/images/thumbnail.jpg`} />
+          <meta name="og:thumbnail" content={`./src/assets/images/thumbnail.jpg`} />
         </Helmet>
 
         <SideBar />
