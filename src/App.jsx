@@ -14,7 +14,7 @@ function App() {
 
         <Helmet>
           <title>Isaias Portfolio</title>
-          <meta name="description" content="Portafolio personal como desarrollador frontend." />
+          <meta name="og:description" content="Portafolio personal como desarrollador frontend." />
           <meta name="og:thumbnail" content="https://i.imgur.com/VZX2mte.png" />
         </Helmet>
 
