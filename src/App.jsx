@@ -5,7 +5,6 @@ import SideBar from "./Components/SideBar/SideBar"
 import Techs from "./Components/Techs/Techs"
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./app.css"
-import imgPreview from "./assets/images/thumbnail.png"
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
 
         <Helmet>
           <title>Isaias Portfolio</title>
-          <meta name="og:thumbnail" content={imgPreview} />
+          <meta name="og:thumbnail" content="https://i.imgur.com/VZX2mte.png" />
         </Helmet>
 
         <SideBar />
