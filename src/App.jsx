@@ -13,7 +13,8 @@ function App() {
       <div id="page-wraper">
         <HelmetProvider>
           <Helmet>
-          <meta name="og:thumbnail" content={imgPreview} />
+          <meta property="og:image" content={imgPreview} />
+          <meta property="og:url" content="https://isa696-portfolio.vercel.app" />
           </Helmet>
 
         <SideBar />
