@@ -12,8 +12,14 @@ function App() {
       <div id="page-wraper">
         <HelmetProvider>
           <Helmet>
+          <meta property="og:title" content="Isaias Portfolio" />
+          <meta name="og:description" content="Portafolio personal como desarrollador frontend." />
+          <meta name="og:type" content="website" />
+          <meta property="og:site_name" content="Isaias Portfolio" />
+          <link rel="canonical" href="https://isa696-portfolio.vercel.app" />
           <meta property="og:image" content="https://i.imgur.com/VZX2mte.png" />
           <meta property="og:url" content="https://isa696-portfolio.vercel.app" />
+          <title>Isaias Portfolio</title>
           </Helmet>
 
         <SideBar />
