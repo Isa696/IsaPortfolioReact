@@ -3,14 +3,26 @@ import ProjectCards from "../ProjectCard/ProjectCards";
 import "./MyProjects.css";
 
 function MyProjects() {
-  const collab = {
-    id: 0,
-    name: "ChillRoom",
-    description:
-      "Web chat bot conectado a la IA de Gemini, tiene 6 personalidades. Proyecto que realizamos durante la codicon 2024",
-    html_url: "https://github.com/haderrenteria13/chillroom",
-    homepage: "",
-  };
+  const collab = [
+    {
+      id: 0,
+      name: "ChillRoom",
+      description:
+        "Web chat bot conectado a la IA de Gemini, tiene 6 personalidades. Proyecto que realizamos durante la codicon 2024",
+      html_url: "https://github.com/haderrenteria13/chillroom",
+      homepage: "",
+    },
+
+    {
+      id: 1,
+      name: "RecetApp",
+      description:
+        "web de recetario, desarrollada en un equipo multidisciplinario durante una simulación laboral de No Country",
+      html_url:
+        "https://github.com/No-Country-simulation/C20-48-t-python-react",
+      homepage: "https://recetapp-no-country.onrender.com/",
+    },
+  ];
 
   return (
     <>
@@ -31,9 +43,12 @@ function MyProjects() {
           </div>
 
           <div className="row">
-          <Cards repo={collab} key={collab.id} />
-          </div>
-
+          {(
+            <div className="loader">
+              <i className="fa fa-spinner fa-spin fa-3x"></i>
+            </div>
+          ) && collab.map((repo) => <Cards repo={repo} key={repo.id} />)}
+          </div >
         </div>
       </section>
     </>
