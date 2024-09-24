@@ -8,7 +8,7 @@ function Techs() {
             <section className="section my-services" data-section="section1">
                 <div className="container">
                     <div className="section-heading">
-                        <h2>Tecnologias</h2>
+                        <h2>Tecnologías</h2>
                         <div className="line-dec"></div>
                     </div>
                     <div className="row">
