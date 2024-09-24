@@ -25,8 +25,13 @@ function ProjectCards() {
             <div className="row">
                 {
                     <div className="loader"><i className="fa fa-spinner fa-spin fa-3x"></i></div>
-                    && data.map((repo) => <Cards repo={repo} key={repo.id} />)
-                }
+                    &&
+                    data.filter((repo) => repo.name !== "Isa696")
+                        .map((repo) => (
+                          <Cards repo={repo} key={repo.id} />
+                        ))
+                    }
+                
             </div >
         </>
     )
