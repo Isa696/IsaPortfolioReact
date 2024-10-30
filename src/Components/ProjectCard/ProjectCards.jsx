@@ -46,7 +46,7 @@ function ProjectCards() {
     return (
         <>
 
-<div className="btn-group d-flex justify-content-between" role="group" aria-label="Basic radio toggle button group">
+            <div className="btn-group d-flex justify-content-between" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" className="btn-check" name="category" id="react" autoComplete="off" checked={selectedCategory === 'react'} onChange={() => setSelectedCategory('react')} />
                 <label className={`btn ${selectedCategory === 'react' ? 'btn-light active' : 'btn-dark'}`} htmlFor="react">React</label>
 

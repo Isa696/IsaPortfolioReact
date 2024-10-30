@@ -6,5 +6,9 @@
 }
 
 .btn-group input[type="radio"] {
-    display: none; 
+    display: none;
+}
+
+.btn{
+    border-radius: 0.25rem !important;
 }
