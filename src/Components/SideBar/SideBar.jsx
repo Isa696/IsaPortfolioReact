@@ -1,4 +1,4 @@
-import profilePicture from '../../assets/images/profile-pic.jpeg'
+import profilePicture from '../../assets/images/profile-pic.png'
 import { useState, useEffect } from 'react';
 import './SideBar.css';
 
