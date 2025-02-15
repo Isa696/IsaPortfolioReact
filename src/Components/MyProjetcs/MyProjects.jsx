@@ -22,11 +22,21 @@ function MyProjects() {
         "https://github.com/No-Country-simulation/C20-48-t-python-react",
       homepage: "https://recetapp-no-country.onrender.com/",
     },
+
+    {
+      id: 1,
+      name: "Stockify",
+      description:
+        "Stockify es una aplicación web inteligente para la gestión y control de inventarios.",
+      html_url:
+        "https://github.com/No-Country-simulation/s20-05-n-webapp",
+      homepage: "https://stock-dep-xi.vercel.app/main",
+    },
   ];
 
   return (
     <>
-      <section className="section my-work" data-section="section2">
+      <section className="section my-work" data-section="section2" id="section2">
         <div className="container">
           <div className="section-heading">
             <h2>Proyectos</h2>

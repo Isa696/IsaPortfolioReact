@@ -5,7 +5,7 @@ function Techs() {
 
     return (
         <>
-            <section className="section my-services" data-section="section1">
+            <section className="section my-services" data-section="section1" id="section1">
                 <div className="container">
                     <div className="section-heading">
                         <h2>Tecnologías</h2>

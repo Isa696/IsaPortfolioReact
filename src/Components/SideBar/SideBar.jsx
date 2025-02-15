@@ -3,41 +3,37 @@ import { useState, useEffect } from "react";
 import "./SideBar.css";
 
 function SideBar() {
+  const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const scrollToSection = (sectionId) => {
-    const reqSection = document.querySelector(`[data-section="${sectionId}"]`);
-    if (reqSection) {
-      reqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    setActiveSection(sectionId);
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-
-  const [activeSection, setActiveSection] = useState("");
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('.section');
+      const scrollPosition = window.scrollY + 100;
+
       sections.forEach((section) => {
-        const topEdge = section.offsetTop - 80;
-        const bottomEdge = topEdge + section.offsetHeight;
-        const wScroll = window.scrollY;
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          setActiveSection(section.dataset.section);
+        if (
+          section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition
+        ) {
+          setActiveSection(section.id);
         }
       });
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleNavClick = (e, sectionId) => {
-    e.preventDefault();
-    setActiveSection(sectionId);
-    scrollToSection(sectionId);
-  };
-
   // Menu open & close functions
-  const [menuOpen, setMenuOpen] = useState(false);
   const handleToggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
