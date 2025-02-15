@@ -1,6 +1,7 @@
 import Cards from "../Cards/Cards";
 import ProjectCards from "../ProjectCard/ProjectCards";
 import "./MyProjects.css";
+import sorteAppImg from "../../assets/images/SorteApp-screen.png";
 
 function MyProjects() {
   const collab = [
@@ -59,6 +60,23 @@ function MyProjects() {
             </div>
           ) && collab.map((repo) => <Cards repo={repo} key={repo.id} />)}
           </div >
+        </div>
+
+          <div className="section-heading">
+            <h2>Apps publicadas</h2>
+            <div className="line-dec"></div>
+          </div>
+
+          <div className="row">
+            <div className="app-item col-auto">
+              <div className="card-item">
+                <img src={sorteAppImg} alt="Sorteapp - App de sorteos" className="app-img"/>
+                <div className="overlay">
+                <a href="https://apkpure.com/es/sorteapp/com.isa6966.SorteApp" target="_blank"><i className="fa fa-link"></i></a>
+                <span>Visitar Tienda!</span>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
     </>

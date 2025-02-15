@@ -1,55 +1,48 @@
 import profilePicture from "../../assets/images/profile-pic.png";
 import { useState, useEffect } from "react";
 import "./SideBar.css";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleNavClick = (e, sectionId) => {
-    e.preventDefault();
-    setMenuOpen(false);
-    setActiveSection(sectionId);
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
       const scrollPosition = window.scrollY + 100;
+      const sections = document.querySelectorAll('.section');
 
       sections.forEach((section) => {
-        if (
-          section.offsetTop <= scrollPosition &&
-          section.offsetTop + section.offsetHeight > scrollPosition
-        ) {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
           setActiveSection(section.id);
         }
       });
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial position
-
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  // Menu open & close functions
-  const handleToggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-  const handleMenuItemClick = () => {
-    setMenuOpen(false);
-  };
 
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    setActiveSection(sectionId);
+    
+    // Using jQuery for smooth scrolling
+    window.$('html, body').animate({
+      scrollTop: window.$(`#${sectionId}`).offset().top - 0
+    }, 800);
+  };
   return (
-    <div className="responsive-nav">
-      <i className="fa fa-bars" id="menu-toggle" onClick={handleToggleMenu}></i>
+<div className="responsive-nav">
+      <i className="fa fa-bars" id="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}></i>
       <div id="menu" className={`menu ${menuOpen ? "open" : ""}`}>
-        <i
-          className="fa fa-times"
-          id="menu-close"
-          onClick={handleMenuItemClick}
-        ></i>
+        <i className="fa fa-times" id="menu-close" onClick={() => setMenuOpen(false)}></i>
         <div className="container">
           <div className="image">
             <img src={profilePicture} alt="" />
@@ -61,40 +54,24 @@ function SideBar() {
 
           <nav className="main-nav" role="navigation">
             <ul className="main-menu">
-              <li className={activeSection === "section1" ? "active" : ""}>
-                <a
-                  href="#section1"
-                  onClick={(e) => handleNavClick(e, "section1")}
-                >
-                  Tecnologías
-                </a>
-              </li>
-              <li className={activeSection === "section2" ? "active" : ""}>
-                <a
-                  href="#section2"
-                  onClick={(e) => handleNavClick(e, "section2")}
-                >
-                  Proyectos
-                </a>
-              </li>
-              <li className={activeSection === "section3" ? "active" : ""}>
-                <a
-                  href="#section3"
-                  onClick={(e) => handleNavClick(e, "section3")}
-                >
-                  Sobre Mí
-                </a>
-              </li>
-              <li className={activeSection === "section4" ? "active" : ""}>
-                <a
-                  href="#section4"
-                  onClick={(e) => handleNavClick(e, "section4")}
-                >
-                  Contacto
-                </a>
-              </li>
+              {[
+                { id: "section1", text: "Tecnologías" },
+                { id: "section2", text: "Proyectos" },
+                { id: "section3", text: "Sobre Mí" },
+                { id: "section4", text: "Contacto" }
+              ].map((section) => (
+                <li key={section.id} className={activeSection === section.id ? "active" : ""}>
+                  <Link
+                    to={`#${section.id}`}
+                    onClick={(e) => handleNavClick(e, section.id)}
+                  >
+                    {section.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
+
 
           <div className="social-network">
             <ul>
@@ -114,6 +91,15 @@ function SideBar() {
                   rel="noopener noreferrer"
                 >
                   <i className="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@IsaiasRomero696"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-youtube"></i>
                 </a>
               </li>
             </ul>

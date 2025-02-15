@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom"
 import AboutMe from "./Components/AboutMe/AboutMe"
 import Contact from "./Components/Contact/Contact"
 import MyProjects from "./Components/MyProjetcs/MyProjects"
@@ -9,6 +10,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 function App() {
   return (
     <>
+    <BrowserRouter>
       <div id="page-wraper">
         <HelmetProvider>
           <Helmet>
@@ -35,6 +37,7 @@ function App() {
 
         </HelmetProvider>
       </div>
+    </BrowserRouter>
     </>
   )
 }

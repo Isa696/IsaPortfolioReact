@@ -18,7 +18,8 @@
     "canvas-confetti": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.5"
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.1.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

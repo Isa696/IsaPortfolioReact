@@ -17,6 +17,26 @@ section.my-work .section-heading {
         width: 96%;
     }
 }
+.app-item {
+    position: relative;
+    width: 48%;
+    aspect-ratio: 3/4;
+    margin: 1%;
+    border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 600px) {
+        width: 96%;
+    }
+}
+
+.app-img {
+    width: 100%;
+    height: 100%;    /* This makes the image take up the top half */
+    object-fit: cover;  /* This ensures the image covers the area without distortion */
+    object-position: top; /* This aligns the image to the top */
+    display: block;
+}
 
 .card-item {
     background-color: rgba(250, 250, 250, 0.1);
