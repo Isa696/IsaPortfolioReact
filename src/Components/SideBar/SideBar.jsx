@@ -7,7 +7,6 @@ function SideBar() {
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100;
@@ -24,7 +23,7 @@ function SideBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    handleScroll(); // Initial check
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -33,10 +32,16 @@ function SideBar() {
     setMenuOpen(false);
     setActiveSection(sectionId);
     
-    // Using jQuery for smooth scrolling
-    window.$('html, body').animate({
-      scrollTop: window.$(`#${sectionId}`).offset().top - 0
-    }, 800);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = -80; // Adjust this value based on your header height
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
   };
   return (
 <div className="responsive-nav">
