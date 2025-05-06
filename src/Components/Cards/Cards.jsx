@@ -5,9 +5,13 @@ function Cards({ repo }) {
                         <h4>{repo.name}</h4>
                         <span>{repo.description}</span>
                     <div className="overlay">
+                        { repo.html_url &&
+                        <>
                         <a href={repo.html_url} target="_blank"
                         ><i className="fa fa-code"></i></a>
                         <span>Ver Codigo!</span>
+                        </>
+                        }
                         { repo.homepage &&
                         <>
                         <a href={repo.homepage} target="_blank"><i className="fa fa-link"></i></a>

@@ -34,6 +34,26 @@ function MyProjects() {
       homepage: "https://stock-dep-xi.vercel.app/main",
     },
   ];
+  const clients = [
+    {
+      id: 0,
+      name: "El paraiso",
+      description:
+        "El Paraíso es una tienda multireligiosa con productos religiosos, esotéricos, holísticos, aromáticos y de decoración.",
+      html_url: "",
+      homepage: "https://el-paraiso.vercel.app/",
+    },
+
+    {
+      id: 1,
+      name: "Herreria Pistone",
+      description:
+        "Herrería Pistone: estructuras metálicas, rejas, escaleras y soluciones en herrería para remodelaciones, decoración y construcción.",
+      html_url:
+        "",
+      homepage: "https://herreriapistone.com/",
+    },
+  ];
 
   return (
     <>
@@ -59,6 +79,20 @@ function MyProjects() {
               <i className="fa fa-spinner fa-spin fa-3x"></i>
             </div>
           ) && collab.map((repo) => <Cards repo={repo} key={repo.id} />)}
+          </div >
+
+          <div className="section-heading">
+            <h2>Clientes</h2>
+            <div className="line-dec"></div>
+            <span>Proyectos en los que he trabajado con clientes</span>
+          </div>
+
+          <div className="row">
+          {(
+            <div className="loader">
+              <i className="fa fa-spinner fa-spin fa-3x"></i>
+            </div>
+          ) && clients.map((repo) => <Cards repo={repo} key={repo.id} />)}
           </div >
         </div>
 
