@@ -2,7 +2,7 @@
   "name": "isaias-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Isa696.github.io/IsaPortfolio",
+  "homepage": "https://isa696-portfolio.vercel.app/",
   "type": "module",
   "scripts": {
     "dev": "vite",

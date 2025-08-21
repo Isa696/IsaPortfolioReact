@@ -1,5 +1,10 @@
 import TechsAccordion from "../TechsAccordion/TechsAccordion";
 import "./Techs.css";
+import webDevCertificate from "../../assets/images/webDev-certificate.png";
+import JsCertificate from "../../assets/images/javascript-certificate.png";
+import reactCertificate from "../../assets/images/react-certificate.png";
+import nativeCertificate from "../../assets/images/native-certificate.png";
+import pyCertificate from "../../assets/images/py-certificate.pdf";
 
 function Techs() {
 
@@ -18,6 +23,7 @@ function Techs() {
                             logo={"first-service-icon service-icon"}
                             logo2={"first-service-icon-2 service-icon"}
                             accordionText={"HTML: Estructura básica, Etiquetas de encabezados, Párrafos, Listas, Enlaces, Imágenes, Formularios, Tablas.\n CSS:Selectores, Propiedades básicas, Diseño de caja, Diseño responsivo, Flexbox y Grid,Animaciones y Transiciones."}
+                            certificate={webDevCertificate}
                         />
 
                         <TechsAccordion
@@ -25,6 +31,7 @@ function Techs() {
                             logo={"second-service-icon service-icon"}
                             logo2={""}
                             accordionText={"Manipulación del DOM,Eventos y manejo de eventos, Bucles, Funciones, Variables y tipos de datos, Condicionales, Arrays y objetos, AJAX y peticiones HTTP,Promesas y asincronía."}
+                            certificate={JsCertificate}
                         />
 
                         <TechsAccordion
@@ -32,6 +39,7 @@ function Techs() {
                             logo={"third-service-icon service-icon"}
                             logo2={"third-service-icon-2 service-icon"}
                             accordionText={"React.js: JSX,Componentes y Props,Estado y Ciclo de Vida, Manejo de Eventos, Listas y Claves, Formularios,Levantamiento del Estado, Hooks, React Router,Context API. \n FireStore: base de datos NoSQL orientada a los documentos."}
+                            certificate={reactCertificate}
                         />
 
                         <TechsAccordion
@@ -46,6 +54,13 @@ function Techs() {
                             logo={"fifth-service-icon service-icon"}
                             logo2={"fifth-service-icon-2 service-icon"}
                             accordionText={`Creacion apps mobiles con expo. Integración componentes nativos: Geolocalización y Camara. Redux: manejo del estado global de la app. Navegación: Tab Navigator y Stack Navigator. Firebase Realtime Database:Sincronización entre la app y la base de datos. Autenticación con Firebase: inicio de sesión y registro de usuarios.`}
+                            certificate={nativeCertificate}
+                        />
+                        <TechsAccordion
+                            title={"Python"}
+                            logo={"sixth-service-icon service-icon"}
+                            accordionText={`Variables y operadores, estructuras de control y bucles, manejo de tuplas, diccionarios y conjuntos, funciones, control de errores y excepciones personalizadas, lectura y escritura de archivos, e importación y creación de módulos propios.`}
+                            certificate={pyCertificate}
                         />
 
                     </div>

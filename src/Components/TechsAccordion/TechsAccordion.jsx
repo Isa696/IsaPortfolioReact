@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./TechsAccordion.css";
 
-function TechsAccordion({ title, logo, logo2, accordionText }) {
+function TechsAccordion({ title, logo, logo2, accordionText, certificate }) {
   const [accordionOpen, setAccordionOpen] = useState(false);
   const accordionClass = accordionOpen
     ? "transition-accordion open"
@@ -29,7 +29,21 @@ function TechsAccordion({ title, logo, logo2, accordionText }) {
           </div>
 
           <div className={accordionClass}>
-            {accordionOpen && <p>{accordionText}</p>}
+            {accordionOpen && (
+              <>
+                <p>{accordionText}</p>
+                {certificate && (
+                  <a
+                  href={certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-certificado"
+                  >
+                  Ver Certificado
+                </a>
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>
