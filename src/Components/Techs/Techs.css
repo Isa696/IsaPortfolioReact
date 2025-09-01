@@ -126,10 +126,23 @@
 .service-item:hover .sixth-service-icon {
     background-image: url("../../assets/images/python-icon-b.svg");
 }
+.service-item .seventh-service-icon {
+    background-image: url("../../assets/images/ux-ui-icon.png");
+}
+.service-item:hover .seventh-service-icon {
+    background-image: url("../../assets/images/ux-ui-icon-black.png");
+}
+.service-item .seventh-service-icon2 {
+    background-image: url("../../assets/images/figma-icon.png");
+}
+.service-item:hover .seventh-service-icon2 {
+    background-image: url("../../assets/images/figma-icon-black.png");
+}
 
 .btn-certificado {
   display: inline-block;
   margin-top: 10px;
+  margin-right: 10px;
   padding: 8px 16px;
   background: #004aad;
   color: #fff;

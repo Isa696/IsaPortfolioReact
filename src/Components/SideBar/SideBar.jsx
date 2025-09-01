@@ -107,6 +107,15 @@ function SideBar() {
                   <i className="fa fa-youtube"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.behance.net/isaiasromero4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-behance"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

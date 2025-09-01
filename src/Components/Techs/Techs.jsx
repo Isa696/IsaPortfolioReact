@@ -5,6 +5,7 @@ import JsCertificate from "../../assets/images/javascript-certificate.png";
 import reactCertificate from "../../assets/images/react-certificate.png";
 import nativeCertificate from "../../assets/images/native-certificate.png";
 import pyCertificate from "../../assets/images/py-certificate.pdf";
+import uxUiCertificate from "../../assets/images/ux-ui-certificate.pdf";
 
 function Techs() {
 
@@ -22,7 +23,7 @@ function Techs() {
                             title={"HTML5 & CSS3"}
                             logo={"first-service-icon service-icon"}
                             logo2={"first-service-icon-2 service-icon"}
-                            accordionText={"HTML: Estructura básica, Etiquetas de encabezados, Párrafos, Listas, Enlaces, Imágenes, Formularios, Tablas.\n CSS:Selectores, Propiedades básicas, Diseño de caja, Diseño responsivo, Flexbox y Grid,Animaciones y Transiciones."}
+                            accordionText={"– HTML: estructura básica, etiquetas de encabezados, párrafos, listas, enlaces, imágenes, formularios y tablas\n– CSS: selectores, propiedades básicas, diseño de caja, diseño responsivo, Flexbox y Grid, animaciones y transiciones"}
                             certificate={webDevCertificate}
                         />
 
@@ -30,7 +31,7 @@ function Techs() {
                             title={"Javascript"}
                             logo={"second-service-icon service-icon"}
                             logo2={""}
-                            accordionText={"Manipulación del DOM,Eventos y manejo de eventos, Bucles, Funciones, Variables y tipos de datos, Condicionales, Arrays y objetos, AJAX y peticiones HTTP,Promesas y asincronía."}
+                            accordionText={"– Manipulación del DOM\n– Eventos y manejo de eventos\n– Bucles\n– Funciones\n– Variables y tipos de datos\n– Condicionales\n– Arrays y objetos\n– AJAX y peticiones HTTP\n– Promesas y asincronía"}
                             certificate={JsCertificate}
                         />
 
@@ -38,7 +39,7 @@ function Techs() {
                             title={"React.js & FireStore"}
                             logo={"third-service-icon service-icon"}
                             logo2={"third-service-icon-2 service-icon"}
-                            accordionText={"React.js: JSX,Componentes y Props,Estado y Ciclo de Vida, Manejo de Eventos, Listas y Claves, Formularios,Levantamiento del Estado, Hooks, React Router,Context API. \n FireStore: base de datos NoSQL orientada a los documentos."}
+                            accordionText={"– React.js: JSX, componentes y props\n– Estado y ciclo de vida\n– Manejo de eventos\n– Listas y claves\n– Formularios\n– Levantamiento del estado\n– Hooks\n– React Router\n– Context API\n– Firestore: base de datos NoSQL orientada a los documentos"}
                             certificate={reactCertificate}
                         />
 
@@ -46,21 +47,29 @@ function Techs() {
                             title={"Git & GitHub"}
                             logo={"fourth-service-icon service-icon"}
                             logo2={"fourth-service-icon-2 service-icon"}
-                            accordionText={`Comandos Básicos de Git: Iniciación, clonación, añadir cambios, confirmar cambios, verificar estado, y enviar cambios.\n Repositorios Remotos: Vinculación de repositorio local con remoto y sincronización de cambios.\n Branching y Merging: Creación de ramas, cambio de ramas, y fusión de cambios.`}
+                            accordionText={`– Comandos básicos de Git: iniciación, clonación, añadir cambios, confirmar cambios, verificar estado y enviar cambios\n– Repositorios remotos: vinculación de repositorio local con remoto y sincronización de cambios\n– Branching y Merging: creación de ramas, cambio de ramas y fusión de cambios`}
                         />
 
                         <TechsAccordion
                             title={"Native & Real Time Database"}
                             logo={"fifth-service-icon service-icon"}
                             logo2={"fifth-service-icon-2 service-icon"}
-                            accordionText={`Creacion apps mobiles con expo. Integración componentes nativos: Geolocalización y Camara. Redux: manejo del estado global de la app. Navegación: Tab Navigator y Stack Navigator. Firebase Realtime Database:Sincronización entre la app y la base de datos. Autenticación con Firebase: inicio de sesión y registro de usuarios.`}
+                            accordionText={`– Creación de apps móviles con Expo\n– Integración de componentes nativos: Geolocalización y Cámara\n– Redux: manejo del estado global de la app\n– Navegación: Tab Navigator y Stack Navigator\n– Firebase Realtime Database: sincronización entre la app y la base de datos\n– Autenticación con Firebase: inicio de sesión y registro de usuarios`}
                             certificate={nativeCertificate}
                         />
                         <TechsAccordion
                             title={"Python"}
                             logo={"sixth-service-icon service-icon"}
-                            accordionText={`Variables y operadores, estructuras de control y bucles, manejo de tuplas, diccionarios y conjuntos, funciones, control de errores y excepciones personalizadas, lectura y escritura de archivos, e importación y creación de módulos propios.`}
+                            accordionText={`– Variables y operadores\n– Estructuras de control y bucles\n– Manejo de tuplas, diccionarios y conjuntos\n– Funciones\n– Control de errores y excepciones personalizadas\n– Lectura y escritura de archivos\n– Importación y creación de módulos propios`}
                             certificate={pyCertificate}
+                        />
+                        <TechsAccordion
+                            title={"Figma + UX/UI"}
+                            logo={"seventh-service-icon service-icon"}
+                            logo2={"seventh-service-icon2 service-icon"}
+                            accordionText={'– Problema, objetivo y solución centrados en usuarios reales\n– MVP validado con ajustes iterativos\n– User Personas + Empathy Map\n– User Flow optimizado\n– Wireframes y mockups en alta fidelidad\n– Proyecto final publicado en Behance'}
+                            certificate={uxUiCertificate}
+                            projectLink={"https://www.behance.net/gallery/233368813/EntrenApp-CURSO-UX-UI-Isaias-Romero"}
                         />
 
                     </div>
